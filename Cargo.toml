@@ -1,0 +1,148 @@
+[package]
+name = "elevenlabs"
+edition = "2021"
+version = "0.1.0"
+description = "ElevenLabs client, generated from the OpenAPI spec."
+homepage = "https://github.com/scrogson/elevenlabs-rs"
+documentation = "https://docs.rs/elevenlabs"
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/scrogson/elevenlabs-rs"
+
+[workspace]
+members = []
+
+[dependencies]
+futures = "0.3.25"
+httpclient = "0.15.0"
+serde_json = "1.0.81"
+
+[dependencies.serde]
+version = "1.0.137"
+features = ["derive"]
+
+[dev-dependencies.tokio]
+version = "1.18.2"
+features = ["full"]
+
+[lib]
+path = "src/lib.rs"
+name = "elevenlabs"
+doctest = false
+edition = "2021"
+crate-type = ["rlib"]
+required-features = []
+
+[[example]]
+path = "examples/add_voice_v_1_voices_add_post.rs"
+name = "add_voice_v_1_voices_add_post"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_history_item_v_1_history_history_item_id_delete.rs"
+name = "delete_history_item_v_1_history_history_item_id_delete"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_history_items_v_1_history_delete_post.rs"
+name = "delete_history_items_v_1_history_delete_post"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_sample_v_1_voices_voice_id_samples_sample_id_delete.rs"
+name = "delete_sample_v_1_voices_voice_id_samples_sample_id_delete"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/delete_voice_v_1_voices_voice_id_delete.rs"
+name = "delete_voice_v_1_voices_voice_id_delete"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/download_history_items_v_1_history_download_post.rs"
+name = "download_history_items_v_1_history_download_post"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/edit_voice_settings_v_1_voices_voice_id_settings_edit_post.rs"
+name = "edit_voice_settings_v_1_voices_voice_id_settings_edit_post"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/edit_voice_v_1_voices_voice_id_edit_post.rs"
+name = "edit_voice_v_1_voices_voice_id_edit_post"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_audio_from_history_item_v_1_history_history_item_id_audio_get.rs"
+name = "get_audio_from_history_item_v_1_history_history_item_id_audio_get"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_audio_from_sample_v_1_voices_voice_id_samples_sample_id_audio_get.rs"
+name = "get_audio_from_sample_v_1_voices_voice_id_samples_sample_id_audio_get"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_default_voice_settings_v_1_voices_settings_default_get.rs"
+name = "get_default_voice_settings_v_1_voices_settings_default_get"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_generated_items_v_1_history_get.rs"
+name = "get_generated_items_v_1_history_get"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_user_info_v_1_user_get.rs"
+name = "get_user_info_v_1_user_get"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_user_subscription_info_v_1_user_subscription_get.rs"
+name = "get_user_subscription_info_v_1_user_subscription_get"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_voice_settings_v_1_voices_voice_id_settings_get.rs"
+name = "get_voice_settings_v_1_voices_voice_id_settings_get"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_voice_v_1_voices_voice_id_get.rs"
+name = "get_voice_v_1_voices_voice_id_get"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/get_voices_v_1_voices_get.rs"
+name = "get_voices_v_1_voices_get"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/text_to_speech_v_1_text_to_speech_voice_id_post.rs"
+name = "text_to_speech_v_1_text_to_speech_voice_id_post"
+edition = "2021"
+required-features = []
+
+[[example]]
+path = "examples/text_to_speech_v_1_text_to_speech_voice_id_stream_post.rs"
+name = "text_to_speech_v_1_text_to_speech_voice_id_stream_post"
+edition = "2021"
+required-features = []
